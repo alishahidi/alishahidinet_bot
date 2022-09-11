@@ -20,7 +20,7 @@ class CalenderCommand extends UserCommand
     /**
      * @var string
      */
-    protected $description = 'Show calender';
+    protected $description = 'مشاهده تاریخ زمان با جزئیات';
 
     /**
      * @var string

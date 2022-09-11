@@ -40,7 +40,7 @@ class WatermarkimageCommand extends UserCommand
     /**
      * @var string
      */
-    protected $description = 'watermark image';
+    protected $description = 'افزودن واترمارک به عکس';
 
     /**
      * @var string

@@ -43,7 +43,7 @@ class BuildpdfCommand extends UserCommand
     /**
      * @var string
      */
-    protected $description = 'Build pdf';
+    protected $description = 'ساخت pdf';
 
     /**
      * @var string

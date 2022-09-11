@@ -45,6 +45,7 @@ class HookController extends Controller
 
         try {
             $telegram = new Telegram(env("HOOK_API_TOKEN"), env("HOOK_USERNAME"));
+            $telegram->enableAdmins(explode(',', env('HOOK_ADMINS')));
             $telegram->addCommandsPaths(Config::get('hook.commands.paths'));
             $telegram->enableMySql(Config::get('hook.mysql'), 'core_');
             $telegram->setDownloadPath(hook_download_path());

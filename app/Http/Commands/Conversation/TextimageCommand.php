@@ -41,7 +41,7 @@ class textimageCommand extends UserCommand
     /**
      * @var string
      */
-    protected $description = 'text image';
+    protected $description = 'افزودن متن به عکس';
 
     /**
      * @var string

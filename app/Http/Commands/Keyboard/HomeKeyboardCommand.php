@@ -18,7 +18,6 @@ namespace Longman\TelegramBot\Commands\UserCommands;
  * Display a keyboard with a few buttons.
  */
 
-use App\Models\User;
 use Longman\TelegramBot\Commands\UserCommand;
 use Longman\TelegramBot\Entities\Keyboard;
 use Longman\TelegramBot\Entities\ServerResponse;
@@ -30,12 +29,12 @@ class HomeKeyboardCommand extends UserCommand
     /**
      * @var string
      */
-    protected $name = 'home_keyboard';
+    protected $name = 'homekeyboard';
 
     /**
      * @var string
      */
-    protected $description = 'Show home keyboard with reply markup';
+    protected $description = 'منو اصلی';
 
     /**
      * @var string
@@ -55,6 +54,7 @@ class HomeKeyboardCommand extends UserCommand
      */
 
     const KEYBOARD_USER_DETAILS = 'اطلاعات کاربری ' . Emoji::CHARACTER_WOMAN;
+    const KEYBOARD_HELP = 'راهنما ' . Emoji::CHARACTER_NOTEBOOK_WITH_DECORATIVE_COVER;
     const KEYBOARD_COMPRESS_IMAGE = 'فشرده سازی عکس ' . Emoji::CHARACTER_CLAMP;
     const KEYBOARD_ADD_WATERMARK_TO_IMAGE = 'افزودن واتر مارک به عکس ' . Emoji::CHARACTER_SAFETY_PIN;
     const KEYBOARD_ADD_TEXT_TO_IMAGE = 'افزودن متن به عکس ' . Emoji::CHARACTER_A_BUTTON_BLOOD_TYPE;
@@ -67,7 +67,7 @@ class HomeKeyboardCommand extends UserCommand
     {
         hook_change_state($this, 'home');
         $keyboard = new Keyboard(
-            [self::KEYBOARD_USER_DETAILS],
+            [self::KEYBOARD_USER_DETAILS, self::KEYBOARD_HELP],
             [self::KEYBOARD_COMPRESS_IMAGE, self::KEYBOARD_ADD_WATERMARK_TO_IMAGE, self::KEYBOARD_ADD_TEXT_TO_IMAGE],
             [self::KEYBOARD_BUILD_PDF, self::KEYBOARD_CALENDER, self::KEYBOARD_FAL_HAFEZ]
         );

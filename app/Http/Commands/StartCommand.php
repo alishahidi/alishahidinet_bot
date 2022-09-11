@@ -3,7 +3,6 @@
 namespace Longman\TelegramBot\Commands\SystemCommands;
 
 use App\Models\User;
-use GuzzleHttp\Psr7\Request;
 use Longman\TelegramBot\Commands\SystemCommand;
 use Longman\TelegramBot\Entities\ServerResponse;
 use Longman\TelegramBot\Exception\TelegramException;
@@ -77,10 +76,10 @@ class StartCommand extends SystemCommand
             '   *1*. فشرده سازی عکس ' . Emoji::CHARACTER_CLAMP . PHP_EOL .
             '   *2*. افزودن متن به عکس ' . Emoji::CHARACTER_A_BUTTON_BLOOD_TYPE . PHP_EOL .
             '   *3*. افزودن واتر مارک به عکس ' . Emoji::CHARACTER_SAFETY_PIN . PHP_EOL .
-            '   *4*. تبدیل متن به pdf ' . Emoji::CHARACTER_NATIONAL_PARK . PHP_EOL .
+            '   *4*. ساخت pdf ' . Emoji::CHARACTER_PAGE_WITH_CURL . Emoji::CHARACTER_NATIONAL_PARK . PHP_EOL .
             '   *5*. فال حافظ ' . Emoji::CHARACTER_RAINBOW . PHP_EOL .
             '   *6*. تقویم ' . Emoji::CHARACTER_CALENDAR . PHP_EOL .
-            '   *7*. اطلاعات کاربری ' . Emoji::CHARACTER_PERSON_WITH_CROWN . PHP_EOL .
+            '   *7*. اطلاعات کاربری ' . Emoji::CHARACTER_WOMAN . PHP_EOL .
             '   *8*. و موارد دیگر ' . PHP_EOL . PHP_EOL .
             'اطلاعات شخصی من: ' . PHP_EOL .
             '   *1*. [وبسایت](http://www.alishahidinet.ir)' . PHP_EOL .

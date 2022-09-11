@@ -38,7 +38,7 @@ class CancelCommand extends UserCommand
     /**
      * @var string
      */
-    protected $description = 'Cancel the currently active conversation';
+    protected $description = 'قطع سرویس در حال اجرا';
 
     /**
      * @var string

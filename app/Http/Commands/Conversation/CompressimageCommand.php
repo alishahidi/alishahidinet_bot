@@ -39,7 +39,7 @@ class CompressimageCommand extends UserCommand
     /**
      * @var string
      */
-    protected $description = 'compress image';
+    protected $description = 'فشرده سازی عکس';
 
     /**
      * @var string

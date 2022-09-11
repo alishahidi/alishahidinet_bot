@@ -20,7 +20,7 @@ class FalshuffleCommand extends UserCommand
     /**
      * @var string
      */
-    protected $description = 'Show fal in random order';
+    protected $description = 'فال حافظ به صورت بهم ریخته';
 
     /**
      * @var string

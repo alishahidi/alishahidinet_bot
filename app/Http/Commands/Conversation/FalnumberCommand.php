@@ -22,7 +22,7 @@ class FalnumberCommand extends UserCommand
     /**
      * @var string
      */
-    protected $description = 'Get fal by number';
+    protected $description = 'فال حافظ با شماره غزل';
 
     /**
      * @var string

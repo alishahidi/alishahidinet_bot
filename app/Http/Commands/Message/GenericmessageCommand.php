@@ -82,6 +82,9 @@ class GenericmessageCommand extends SystemCommand
                     case (trim(HomeKeyboardCommand::KEYBOARD_USER_DETAILS)):
                         $this->telegram->executeCommand('userdetails');
                         break;
+                    case (trim(HomeKeyboardCommand::KEYBOARD_HELP)):
+                        $this->telegram->executeCommand('help');
+                        break;
                     case (trim(HomeKeyboardCommand::KEYBOARD_COMPRESS_IMAGE)):
                         $this->telegram->executeCommand('compressimage');
                         break;

@@ -20,7 +20,7 @@ class UserdetailsCommand extends UserCommand
     /**
      * @var string
      */
-    protected $description = 'Show your id, name and username and more';
+    protected $description = 'دریافت اطلاعات کاربری';
 
     /**
      * @var string

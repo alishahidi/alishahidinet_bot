@@ -29,12 +29,12 @@ class FalKeyboardCommand extends UserCommand
     /**
      * @var string
      */
-    protected $name = 'fal_keyboard';
+    protected $name = 'falkeyboard';
 
     /**
      * @var string
      */
-    protected $description = 'Show fal keyboard with reply markup';
+    protected $description = 'منو فال حافظ';
 
     /**
      * @var string
